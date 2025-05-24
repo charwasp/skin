@@ -1,0 +1,22 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    observer (0.1.2)
+    pkg-config (1.6.2)
+    plist (3.7.2)
+    rake (13.2.1)
+    rmagick (6.1.1)
+      observer (~> 0.1)
+      pkg-config (~> 1.4)
+
+PLATFORMS
+  ruby
+  x86_64-linux
+
+DEPENDENCIES
+  plist
+  rake
+  rmagick
+
+BUNDLED WITH
+   2.6.8

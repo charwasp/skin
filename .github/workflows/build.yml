@@ -1,0 +1,68 @@
+name: Build
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Scour
+        uses: threeal/pipx-install-action@v1
+        with:
+          packages: scour
+
+      - name: Set up ImageMagick
+        run: sudo apt-get install -y libmagickwand-dev
+
+      - name: Install fonts
+        run: |
+          mkdir -p ~/.local/share/fonts
+          cp -r font/* ~/.local/share/fonts
+          fc-cache -f -v
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.4'
+          bundler-cache: true
+
+      - name: Build
+        run: bundle exec rake
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: build
+
+  push:
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      contents: write
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build
+          path: build
+
+      - name: Push PNG
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: build-png
+          build_dir: build/png
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push SVG
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: build-svg
+          build_dir: build/svg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
