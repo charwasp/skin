@@ -2,4 +2,5 @@ assets
 extract
 build
 spritesheet
+tmp
 *.log

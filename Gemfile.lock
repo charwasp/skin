@@ -5,6 +5,7 @@ GEM
     pkg-config (1.6.2)
     plist (3.7.2)
     rake (13.2.1)
+    rexml (3.4.1)
     rmagick (6.1.1)
       observer (~> 0.1)
       pkg-config (~> 1.4)
@@ -16,7 +17,8 @@ PLATFORMS
 DEPENDENCIES
   plist
   rake
+  rexml
   rmagick
 
 BUNDLED WITH
-   2.6.8
+   2.6.9
