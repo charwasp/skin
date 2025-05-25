@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 960 540" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<pattern id="b" xlink:href="#a" patternTransform="translate(8.0371 465.1)" preserveAspectRatio="xMidYMid"/>
+<pattern id="c" xlink:href="#a" patternTransform="translate(8.0371 465.1)" preserveAspectRatio="xMidYMid"/>
+<pattern id="d" xlink:href="#e" patternTransform="translate(942.65 512.67)" preserveAspectRatio="xMidYMid"/>
+<pattern id="f" xlink:href="#g" patternTransform="translate(22 499.85)" preserveAspectRatio="xMidYMid"/>
+<pattern id="i" y="-0.3" xlink:href="#j" patternTransform="rotate(.16 -119595 230975)" preserveAspectRatio="xMidYMid"/>
+<pattern id="j" width="157.8789" height="91.150394" patternTransform="translate(644.54 334.87)" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMid">
+<path d="m38.604 0 13.156 22.787-25.879 44.824h-25.881v1.502h25.881l12.723 22.037h1.7344l-13.158-22.789 25.881-44.824h51.758l25.881 44.824v0.0019l-13.156 22.787h1.7305l12.723-22.037h25.883v-1.502h-25.881l-12.941-22.412-12.939-22.412 13.156-22.787h-1.7305l-12.723 22.037h-51.758l-12.725-22.037z" fill="#ffab5d" fill-opacity=".39307" stroke-linejoin="round" stroke-miterlimit="4.6" stroke-width="1.0935"/>
+</pattern>
+<pattern id="h" width="5.691406" height="5.5039" fill="#000000" patternTransform="translate(22 499.85)" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMid">
+<path d="m5.6914 0-5.6914 5.5039h1.4395l4.252-4.1113z" stroke-linejoin="round" stroke-miterlimit="4.6"/>
+</pattern>
+<pattern id="g" width="5.6914058" height="5.5039001" fill="#000000" patternTransform="translate(22 499.85)" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMid">
+<g transform="translate(-22 -499.85)">
+<rect x="22" y="499.85" width="5.6914" height="5.5039" fill="url(#h)"/>
+<path d="m22 499.85v1.3906l1.4395-1.3906z" stroke-linejoin="round" stroke-miterlimit="4.6"/>
+</g>
+</pattern>
+<pattern id="e" width="5.47071" height="5.28906" fill="#000000" patternTransform="translate(942.65 512.67)" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMid">
+<g transform="translate(-942.65 -512.67)">
+<path d="m948.12 512.67-5.4707 5.2891h1.4375l4.0332-3.9004z" stroke-linejoin="round" stroke-miterlimit="4.6"/>
+<path d="m942.65 512.67v1.3906l1.4375-1.3906z" stroke-linejoin="round" stroke-miterlimit="4.6"/>
+</g>
+</pattern>
+<linearGradient id="l" x1="480" x2="480" y1="542.86" y2="1.6646" gradientUnits="userSpaceOnUse">
+<stop stop-color="#e98e41" stop-opacity=".39303" offset=".00071956"/>
+<stop stop-opacity=".47116" offset="1"/>
+</linearGradient>
+<linearGradient id="k" x1="480" x2="480" y1="-.77501" y2="538.62" gradientUnits="userSpaceOnUse">
+<stop offset=".35"/>
+<stop stop-opacity="0" offset=".67"/>
+</linearGradient>
+<pattern id="a" width="9.3281246" height="4.51757" fill="#000000" patternTransform="translate(8.0371 465.1)" patternUnits="userSpaceOnUse" preserveAspectRatio="xMidYMid">
+<g transform="translate(-8.0371 -465.1)">
+<path d="m8.0371 465.1v4.5176h1.25v-4.5176z" fill="#ffab5c" fill-opacity=".39216" stroke-linejoin="round" stroke-miterlimit="4.6"/>
+<path d="m16.115 465.1v4.5176h1.25v-4.5176z" fill="#ffab5c" fill-opacity=".39216" stroke-linejoin="round" stroke-miterlimit="4.6"/>
+</g>
+</pattern>
+</defs>
+<g>
+<rect width="960" height="540"/>
+<rect width="960" height="540" fill="url(#l)"/>
+<rect width="960" height="540" fill="url(#i)"/>
+<path d="m2.2 541 237.5-542h480.6l237.5 542" fill-opacity=".67"/>
+<path d="M 7.2,541 244.7,-1 H 0 v 542" fill="url(#c)"/>
+<path d="m952.8 541-237.5-542h244.7v542" fill="url(#b)"/>
+<path d="m2.2 541 237.5-542h5l-237.5 542z" fill="url(#f)" stroke="#000" stroke-linejoin="round" stroke-miterlimit="4.6"/>
+<path d="m957.8 541-237.5-542h-5l237.5 542z" fill="url(#d)" stroke="#000" stroke-linejoin="round" stroke-miterlimit="4.6"/>
+<rect width="960" height="540" fill="url(#k)"/>
+</g>
+</svg>
