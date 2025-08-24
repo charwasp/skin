@@ -69,8 +69,7 @@ task :spritesheet do
 			next unless File.exist? source_path
 			(x, y), (width, height) = JSON.parse info['frame'].tr '{}', '[]'
 			source, *_ = Magick::Image.read source_path
-			#image.composite! source, x, y, Magick::SrcCompositeOp # https://github.com/rmagick/rmagick/issues/1695
-			image.import_pixels x, y, width, height, 'RGBA', source.export_pixels_to_str(0, 0, width, height, 'RGBA')
+			image.composite! source, x, y, Magick::SrcCompositeOp
 		end
 		image.write output_path
 	end
@@ -80,6 +79,7 @@ task :clean do
 	FileUtils.rm_r 'build' if Dir.exist? 'build'
 	FileUtils.rm_r 'extract' if Dir.exist? 'extract'
 	FileUtils.rm_r 'tmp' if Dir.exist? 'tmp'
+	FileUtils.rm_r 'spritesheet' if Dir.exist? 'spritesheet'
 end
 
 task default: :build
